@@ -82,13 +82,16 @@ const oddFilter = (value) => {
   return value % 2 !== 0 ? true : false;
 };
 
+const dividedByN = (value, n) => (value % n === 0 ? true : false);
+
 const evenNumber = generatedArray.filter(evenFilter);
 // console.log(evenNumber);
 const oddNumber = generatedArray.filter(oddFilter);
 // console.log(oddNumber);
-
+const numberDividedByN = generatedArray.filter((value) => dividedByN(value, 3));
+console.log(numberDividedByN);
 // method chaining
 const sortedEvenNumber = generatedArray.filter(evenFilter).sort(ascendingSort);
 const sortedOddNumber = generatedArray.filter(oddFilter).sort(descendingSort);
-console.log(sortedEvenNumber);
-console.log(sortedOddNumber);
+// console.log(sortedEvenNumber);
+// console.log(sortedOddNumber);
