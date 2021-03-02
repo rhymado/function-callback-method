@@ -2,8 +2,8 @@
 
 const tryMethod = {
   // local this
-  firstName: "Riski",
-  lastName: "Arifani",
+  firstName: "Bambang",
+  lastName: "Setyo",
   methodOne: function () {
     console.log("Method One");
   },
